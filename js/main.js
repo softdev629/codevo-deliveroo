@@ -30,6 +30,13 @@ Array.from(scrollLink).map((link) => {
 });
 
 /* =========== Preloader =========== */
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 2000);
+});
 
 /* =========== Scroll Top =========== */
 const scrollTop = document.querySelector(".scroll-top");
